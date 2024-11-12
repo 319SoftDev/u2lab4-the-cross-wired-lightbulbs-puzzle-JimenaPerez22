@@ -125,3 +125,54 @@ const change67 = () =>{
 switch9.addEventListener("change", change67);
 
 //master switch
+const masterButton = document.querySelector("#masterButton");
+
+const masterB = () =>{
+    const lightbulb1 = document.querySelector("#lightbulb1");
+    const lightbulb2 = document.querySelector("#lightbulb2");
+    const lightbulb3 = document.querySelector("#lightbulb3");
+    const lightbulb4 = document.querySelector("#lightbulb4");
+    const lightbulb5 = document.querySelector("#lightbulb5");
+    const lightbulb6 = document.querySelector("#lightbulb6");
+    const lightbulb7 = document.querySelector("#lightbulb7");
+    const lightbulb8 = document.querySelector("#lightbulb8");
+    const lightbulb9 = document.querySelector("#lightbulb9");
+
+    lightbulb1.classList.toggle("active");
+    lightbulb2.classList.toggle("active");
+    lightbulb3.classList.toggle("active");
+    lightbulb4.classList.toggle("active");
+    lightbulb5.classList.toggle("active");
+    lightbulb6.classList.toggle("active");
+    lightbulb7.classList.toggle("active");
+    lightbulb8.classList.toggle("active");
+    lightbulb9.classList.toggle("active");
+}
+masterButton.addEventListener("click", masterB);
+
+//restart
+const restartButton = document.querySelector("#restartButton");
+
+const restButton = () =>{
+    const lightbulb1 = document.querySelector("#lightbulb1");
+    const lightbulb2 = document.querySelector("#lightbulb2");
+    const lightbulb3 = document.querySelector("#lightbulb3");
+    const lightbulb4 = document.querySelector("#lightbulb4");
+    const lightbulb5 = document.querySelector("#lightbulb5");
+    const lightbulb6 = document.querySelector("#lightbulb6");
+    const lightbulb7 = document.querySelector("#lightbulb7");
+    const lightbulb8 = document.querySelector("#lightbulb8");
+    const lightbulb9 = document.querySelector("#lightbulb9");
+
+    lightbulb1.classList.remove("active");
+    lightbulb2.classList.remove("active");
+    lightbulb3.classList.remove("active");
+    lightbulb4.classList.remove("active");
+    lightbulb5.classList.remove("active");
+    lightbulb6.classList.remove("active");
+    lightbulb7.classList.remove("active");
+    lightbulb8.classList.remove("active");
+    lightbulb9.classList.remove("active");
+}
+
+restartButton.addEventListener("click", restButton);
